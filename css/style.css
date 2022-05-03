@@ -1,0 +1,359 @@
+@charset "UTF-8";
+@import url("../webfonts/LittlePaws_8MZqZ/stylesheet.css");
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+/* Home page */
+body {
+    background-color: #FFFFFF;
+    background-image: url(../Images/203467-animals-dog-forest.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+    color: #D0D0D0;
+    background-color: #4F4F4F;
+    float: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	width:100%;
+}
+footer a{
+	text-decoration: none;
+	color:#D0D0D0; 
+}
+/* Menu */
+.navbar{
+	width:85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+		
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-size: 25px;
+}
+.navbar a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height:3px;
+	width:0;
+	background: #964B00;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+	
+}
+.navbar ul li {
+    font-family: "LittlePaws 8MZqZ";
+    font-size: large;
+}
+.navbar ul li:hover::after{
+	width:100%;
+}
+
+ul li ul {
+	display: none;
+}
+ul li:hover ul{
+	display: block;
+}
+
+/* Button and Text */
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+	
+}
+.col{
+	flex-basis: 50%;
+	color: #FFFFFF;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-style: oblique;
+	
+}
+h1{
+    color: #835B2A;
+    font-size: 100px;
+    font-style: normal;
+    font-family: "LittlePaws 8MZqZ";
+    font-weight: 400;
+}
+
+button{
+    width: 180px;
+    color: #835B2A;
+    font-size: 25px;
+    padding: 12px 0;
+    border: 0px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-family: "LittlePaws 8MZqZ";
+}
+button a{
+	text-decoration: none;
+	color: #835B2A;
+}
+
+
+/* Services page */
+.title{
+	text-align: center;
+	color: white;
+	font-family:"LittlePaws 8MZqZ";
+	font-size:38px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	background-color: white;
+	width:270px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.card-image{
+	background-color: darkgray;
+	height:170px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.car-1{
+	background-image: url("../Images/dog-with-clicker.png");
+}
+
+.car-2{
+	background-image: url("../Images/Groomer-bathes-corgi-scaled.jpeg");
+}
+
+.car-3{
+	background-image:url("../Images/luna-w576h480.jpeg");
+}
+.card h2{
+	padding: 10px;
+	color:#835B2A;
+	Font-family:"LittlePaws 8MZqZ";
+}
+.card p{
+	padding: 10px;
+}
+
+.card a{
+	background-color: #835B2A; 
+	color:gray;
+	padding:15px 20px;
+	display: block;
+	text-align: center;
+	
+}
+.card:hover{
+	background-color: dimgray;
+	color: white;
+	cursor: pointer;
+	transform: scale(1.05);
+	transition:all 1s ease;
+}
+/* Contact form */
+.container1{
+	width: 50%;
+	margin: 50px auto;
+}
+
+.contact-box{
+	background:white;
+	display: flex;
+}
+.contact-left{
+	flex-basis: 60%;
+	padding: 40px 60px;
+}
+.contact-right{
+	flex-basis: 40%;
+	padding: 40px;
+	background:#835B2A;
+	color: white;
+	
+}
+.container1 h1{
+	color: white;
+}
+.container1 h2{
+	margin-bottom: 40px;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.input-row{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.input-row .input-group{
+	flex-basis: 45%;
+}
+input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
+}
+textarea{
+	width:100%;
+	border:1px solid #ccc;
+	outline:none;
+	padding:10px;
+	box-sizing: border-box;
+}
+label{
+	margin-bottom: 6px;
+	display: block;
+	color: #835B2A;
+}
+.formbutton{
+	background:#835B2A;
+	width:100px;
+	border:none;
+	outline:none;
+	color:white;
+	height:35px;
+	border-radius:30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+	color: #835B2A;
+	font-weight: 600;
+	margin-bottom: 30px;
+	
+}
+.contact-right h3{
+	color: white;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.tr td:first-child{
+	padding-right:20px;
+	
+}
+.tr td{
+	padding-top: 20px;
+}
+/* Text Image pages */
+.box{
+  position:inherit;	
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  width: 350px;
+  border-radius:30px;
+  padding:20px;	
+  display: block;
+	  
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  color:#C2813;
+  font-weight: bold;	
+}
+.text h2{
+	font-family:"LittlePaws 8MZqZ";
+	padding:20px;
+	color:#C28133;
+	font-weight: bold;
+	
+}
+.text p{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	padding:20px;
+	background: grey;
+	border-radius:10px;
+}
+
+
+
+
+/* Sitemap */
+.sitemap li{
+	text-align: center;
+	text-decoration: none;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	list-style: none;
+}
+.sitemap a{
+	color: white;
+}
+/* resize */
+
+
+
+@media (max-width: 800px){
+	.box{
+    	width: 16px; 
+		text-align: center;
+		display: block;
+	}
+	.text{
+    width: 373px;
+    align-content: center;
+	}
+	.image{
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: -39px;
+    margin-bottom: 0;
+    position: relative;
+    float: none;
+    text-align: center;
+    display: inline-block;
+	}
+	.pic{
+    width: 236px;
+    margin-left: 105px;
+	}
+.full {
+    width: 100%;
+    height: 100%;
+}
+.full .container1 h1 {
+    width: 0px;
+}
+}
